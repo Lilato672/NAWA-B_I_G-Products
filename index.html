@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>BIG-NAWA Products</title>
+
+    <style>
+        Body {
+            Margin: 0;
+            Font-family: Arial, sans-serif;
+            Background-color: #f4f6f8;
+            Color: #222;
+        }
+
+        Header {
+            Background-color: #123456;
+            Color: white;
+            Text-align: center;
+            Padding: 25px;
+        }
+
+        Nav {
+            Background-color: #09243d;
+            Padding: 15px;
+            Text-align: center;
+        }
+
+        Nav a {
+            Color: white;
+            Text-decoration: none;
+            Margin: 15px;
+        }
+
+        .welcome {
+            Text-align: center;
+            Padding: 30px 15px;
+        }
+
+        .products {
+            Display: grid;
+            Grid-template-columns: repeat(
+                Auto-fit, minmax(220px, 1fr)
+            );
+            Gap: 20px;
+            Padding: 20px;
+        }
+
+        .product {
+            Background-color: white;
+            Padding: 15px;
+            Border-radius: 10px;
+            Text-align: center;
+            Box-shadow: 0 2px 8px #00000015;
+        }
+
+        .product img {
+            Width: 100%;
+            Height: 180px;
+            Object-fit: contain;
+        }
+
+        .price {
+            Color: #087443;
+            Font-weight: bold;
+            Font-size: 20px;
+        }
+
+        Button {
+            Background-color: #123456;
+            Color: white;
+            Padding: 12px 18px;
+            Border: none;
+            Border-radius: 5px;
+            Cursor: pointer;
+        }
+
+        Footer {
+            Background-color: #123456;
+            Color: white;
+            Text-align: center;
+            Padding: 20px;
+            Margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BIG-NAWA Products</h1>
+        <p>Your trusted place to discover products</p>
+    </header>
+
+    <nav>
+        <a href=”#home”>Home</a>
+        <a href=”#products”>Products</a>
+        <a href=”#contact”>Contact</a>
+    </nav>
+
+    <section class=”welcome” id=”home”>
+        <h2>Welcome to BIG-NAWA Products</h2>
+        <p>Explore our products and find something you love.</p>
+    </section>
+
+    <section id=”products”>
+        <h2 style=”text-align:center;”>Our Products</h2>
+
+        <div class=”products”>
+
+            <div class=”product”>
+                <img src=https://placehold.co/400x250?text=Laptop
+                     Alt=”Laptop”>
+                <h3>Laptop</h3>
+                <p>Reliable laptop for work and study.</p>
+                <p class=”price”>K8,500</p>
+                <button onclick=”contactUs(‘Laptop’)”>
+                    Enquire Now
+                </button>
+            </div>
+
+            <div class=”product”>
+                <img src=https://placehold.co/400x250?text=Headphones
+                     Alt=”Headphones”>
+                <h3>Headphones</h3>
+                <p>Enjoy music with clear sound.</p>
+                <p class=”price”>K450</p>
+                <button onclick=”contactUs(‘Headphones’)”>
+                    Enquire Now
+                </button>
+            </div>
+
+            <div class=”product”>
+                <img src=https://placehold.co/400x250?text=Smartphone
+                     Alt=”Smartphone”>
+                <h3>Smartphone</h3>
+                <p>Stay connected wherever you go.</p>
+                <p class=”price”>K3,200</p>
+                <button onclick=”contactUs(‘Smartphone’)”>
+                    Enquire Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id=”contact”>
+        <h3>Contact BIG-NAWA Products</h3>
+        <p>Email: info@example.com</p>
+        <p>Practice project by a junior web developer.</p>
+    </footer>
+
+    <script>
+        Function contactUs(productName) {
+            Alert(
+                “Thank you for your interest in “ +
+                productName +
+                “! Contact BIG-NAWA Products for more details.”
+            );
+        }
+    </script>
+
+</body>
+</html>
+
